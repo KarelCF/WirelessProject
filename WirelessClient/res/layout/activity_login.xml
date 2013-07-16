@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+    
+	<TableLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:gravity="center_vertical"
+	android:stretchColumns="1">
+	
+		<TableRow>
+			<TextView 
+			android:text="用户名称：" 
+			android:id="@+id/TextView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			/> 
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/userEditText"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"/>
+		</TableRow>
+
+		<TableRow>
+			<TextView 
+			android:text="用户密码：" 
+			android:id="@+id/TextView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			/>
+			
+			<EditText 
+			android:text="" 
+			android:id="@+id/pwdEditText"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:password="true"/>
+			
+		</TableRow>
+		
+		<TableRow 
+			android:gravity="right">
+			
+			<Button 
+				android:text="取消" 
+				android:id="@+id/cancelButton"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+			<Button 
+				android:text="登陆" 
+				android:id="@+id/loginButton"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"/>
+	
+		</TableRow>
+
+	</TableLayout>
+</LinearLayout>
